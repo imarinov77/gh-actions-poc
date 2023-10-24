@@ -13,7 +13,7 @@ jobs:
       - name: Install deps
         run: npm ci
       - name: Run test 
-        run: bpm test 
+        run: npm test 
   deploy:
     needs: test
     runs-on: ubuntu-latest
