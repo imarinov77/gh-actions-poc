@@ -1,0 +1,9 @@
+name: Issue
+on: issues
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        run: |
+            echo ${{ toJson(github.issues) }} 
