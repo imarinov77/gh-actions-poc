@@ -4,6 +4,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
+      - name: Print issue
         run: |
-            echo ${{ github.event.issue }} 
+            echo ${{ toJson(github.event.issue) }} 
